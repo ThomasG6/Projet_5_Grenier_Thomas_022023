@@ -1,9 +1,13 @@
 import { Outlet } from "react-router-dom";
 
+import Navbar from "../components/Navbar";
+
 function BannerLayout() {
   return (
     <>
-      <header></header>
+      <header>
+        <Navbar />
+      </header>
 
       <main>
         <Outlet />

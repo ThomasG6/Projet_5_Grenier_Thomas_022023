@@ -1,0 +1,25 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand{
+    width: 210px;
+  }
+
+  &__nav{
+    display: flex;
+    gap: 57px;
+
+    &__link{
+      font-size: 24px;
+      font-weight: 500;
+      color:#FF6060;
+      text-decoration: none;
+
+      &--active{
+        text-decoration: underline;
+      }
+    }
+  }
+}
