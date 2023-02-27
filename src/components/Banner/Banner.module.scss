@@ -1,0 +1,46 @@
+.banner {
+  position: relative;
+  width: 100%;
+  margin-top: 63px;
+  margin-bottom: 43px;
+  border-radius: 25px;
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    position: relative;
+    width: 100%;
+
+    &--basic {
+      height: 223px;
+    }
+
+    &--large {
+      height: 415px;
+    }
+  }
+  &__darken {
+    background-color: #000000;
+    border-radius: 25px;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    position: absolute;
+    width: max-content;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
