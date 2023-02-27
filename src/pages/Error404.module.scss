@@ -1,0 +1,19 @@
+.error404 {
+  text-align: center;
+
+  &__title {
+    font-size: 288px;
+    margin-top: 275px;
+    margin-bottom: 200px;
+  }
+
+  &__description {
+    font-size: 36px;
+    margin-bottom: 186px;
+  }
+
+  &__link {
+    color: #ff6060;
+    display: block;
+  }
+}
