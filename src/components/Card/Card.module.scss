@@ -1,0 +1,35 @@
+.card {
+  border-radius: 10px;
+  height: 100%;
+  min-height: 340px;
+  position: relative;
+
+  &__image {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  &__darken {
+    background: linear-gradient(180deg, #ffffff00 0%, #00000080 100%);
+    border-radius: 10px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__title {
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    left: 20px;
+    margin-right: 20px;
+    position: absolute;
+  }
+
+  &:hover > &__image {
+    opacity: 0.3;
+  }
+}
