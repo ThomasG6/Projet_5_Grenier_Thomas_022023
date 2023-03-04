@@ -28,7 +28,7 @@ function Carrousel({ images }) {
     <div className={styles.carrousel}>
       {imageQuantity > 1 && (
         <img
-          className={`${styles.arrow} ${styles["arrow__right"]}`}
+          className={`${styles.arrow} ${styles.arrow__right}`}
           src={arrow}
           alt="précedent"
           onClick={previousImg}
@@ -40,7 +40,7 @@ function Carrousel({ images }) {
             key={index}
             className={
               index === imageDisplay
-                ? `${styles["carrousel__img"]} ${styles.active}`
+                ? `${styles.carrousel__img} ${styles.active}`
                 : styles.carrousel__img
             }
             src={image}
@@ -50,7 +50,7 @@ function Carrousel({ images }) {
       })}
       {imageQuantity > 1 && (
         <img
-          className={`${styles.arrow} ${styles["arrow__left"]}`}
+          className={`${styles.arrow} ${styles.arrow__left}`}
           src={arrow}
           alt="suivant"
           onClick={imgFollowing}
