@@ -7,9 +7,9 @@ import styles from "./Home.module.scss";
 
 function Home() {
   return (
-    <>
+    <div className={styles.housing}>
       <Banner image={banner} text="Chez vous, partout et ailleurs" />
-      <div className={styles.housingList}>
+      <div className={styles.housing__housingList}>
         {housingList.map((housing) => (
           <NavLink key={housing.id} to={"/housing/" + housing.id + "/#"}>
             <Card
@@ -20,7 +20,7 @@ function Home() {
           </NavLink>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
