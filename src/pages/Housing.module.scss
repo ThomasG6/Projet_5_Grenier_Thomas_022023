@@ -1,4 +1,47 @@
 .housing {
+  &__informations {
+    display: flex;
+    width: 100%;
+    & > div {
+      flex: 1 0 auto;
+    }
+    &__house {
+      flex-direction: column;
+      &__name {
+        font-size: 36px;
+      }
+      &__location {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+    }
+    &__owner {
+      &__house {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        &__name {
+          font-size: 18px;
+          margin-right: 10px;
+          text-align: right;
+          width: 100px;
+        }
+        &__picture {
+          border-radius: 50%;
+          height: 64px;
+          object-fit: cover;
+          width: 64px;
+        }
+      }
+      &__note {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
   &__details {
     display: flex;
     justify-content: space-between;
@@ -10,4 +53,10 @@
       width: 50%;
     }
   }
+}
+
+.star {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
 }
