@@ -6,11 +6,11 @@ function Collapse({ title, description }) {
   const [opener, setOpener] = useState(false);
 
   return (
-    <div className={styles.collapse} id={`clollapse--${title}`}>
+    <div className={styles.collapse} id={`collapse--${title}`}>
       <div className={styles.collapse__header}>
         <div className={styles.collapse__header__title}>{title}</div>
         <div
-          className={`collapse__header__vector ${opener}`}
+          className={`${styles.collapse__header__vector} ${opener}`}
           onClick={() => setOpener(!opener)}
         >
           <img src={vector} alt="ouvrir la liste" />
