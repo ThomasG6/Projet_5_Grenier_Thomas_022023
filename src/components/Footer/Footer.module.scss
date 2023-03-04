@@ -23,3 +23,11 @@ footer {
     font-size: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
