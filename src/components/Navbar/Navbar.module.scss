@@ -1,24 +1,38 @@
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  &__brand{
+  &__brand {
     width: 210px;
   }
 
-  &__nav{
+  &__nav {
     display: flex;
     gap: 57px;
 
-    &__link{
+    &__link {
       font-size: 24px;
       font-weight: 500;
-      color:#FF6060;
+      color: #ff6060;
       text-decoration: none;
 
-      &--active{
+      &--active {
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    &__brand {
+      width: 30%;
+    }
+    &__nav {
+      gap: 10px;
+      &__link {
+        font-size: 12px;
       }
     }
   }
