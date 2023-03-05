@@ -3,3 +3,9 @@
   max-width: 1440px;
   padding: 40px 100px;
 }
+
+@media (max-width: 768px) {
+  .app {
+    padding: 40px 21px;
+  }
+}

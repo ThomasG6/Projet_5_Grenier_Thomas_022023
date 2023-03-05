@@ -27,7 +27,10 @@
 @media (max-width: 768px) {
   .navbar {
     &__brand {
-      width: 30%;
+      width: 145px;
+    }
+    &__brand > img {
+      width: 145px;
     }
     &__nav {
       gap: 10px;

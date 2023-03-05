@@ -41,3 +41,24 @@
     filter: drop-shadow(2px 4px 6px black);
   }
 }
+
+@media screen and (max-width: 425px) {
+  .carrousel {
+    height: 255px;
+    margin: 25px auto 30px auto;
+    &__img {
+      border-radius: 10px;
+      height: 255px;
+    }
+  }
+
+  .arrow {
+    width: 15px;
+    &__left {
+      margin-left: 5px;
+    }
+    &__right {
+      margin-right: 5px;
+    }
+  }
+}

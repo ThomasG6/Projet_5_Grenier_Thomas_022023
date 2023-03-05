@@ -12,3 +12,10 @@
 .tag:first-of-type {
   margin-left: 0;
 }
+
+@media screen and (max-width: 425px) {
+  .tag {
+    font-size: 10px;
+    text-align: center;
+  }
+}

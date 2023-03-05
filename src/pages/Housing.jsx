@@ -55,12 +55,12 @@ function Housing() {
           <Carrousel images={housingDetails?.pictures} />
           <div className={styles.housing__informations}>
             <div className={styles.housing__informations__house}>
-              <span className={styles.housing__informations__house__name}>
+              <h1 className={styles.housing__informations__house__name}>
                 {housingDetails?.title}
-              </span>
-              <span className={styles.housing__informations__house__location}>
+              </h1>
+              <p className={styles.housing__informations__house__location}>
                 {housingDetails?.location}
-              </span>
+              </p>
               <div className={styles.housing__informations__house__tag}>
                 {tagsHousing}
               </div>
