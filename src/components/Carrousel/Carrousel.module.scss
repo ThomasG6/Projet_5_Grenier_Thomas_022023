@@ -12,6 +12,18 @@
     display: none;
     width: 100%;
   }
+
+  &__currentIndex {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: max-content;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+  }
 }
 
 .active {
@@ -49,6 +61,9 @@
     &__img {
       border-radius: 10px;
       height: 255px;
+    }
+    &__currentIndex {
+      display: none;
     }
   }
 
